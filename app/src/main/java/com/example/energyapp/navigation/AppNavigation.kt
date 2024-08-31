@@ -1,15 +1,16 @@
 package com.example.energyapp.navigation
 
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.energyapp.ui.screens.CadastroScreen
 import com.example.energyapp.ui.screens.HomeScreen
+import com.example.energyapp.ui.screens.ListaScreen
 import com.example.energyapp.ui.screens.LoginScreen
 import com.example.energyapp.ui.screens.ProfileScreen
 import com.example.energyapp.ui.screens.SplashScreen
+
 
 @Composable
 fun AppNavigation(navController: NavHostController) {
@@ -28,6 +29,9 @@ fun AppNavigation(navController: NavHostController) {
         }
         composable("cadastro_screen") {
             CadastroScreen(navController)
+        }
+        composable("lista_screen") {
+            ListaScreen(navController)
         }
     }
 }

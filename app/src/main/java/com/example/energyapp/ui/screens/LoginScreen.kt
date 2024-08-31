@@ -40,23 +40,22 @@ import androidx.navigation.NavHostController
 import com.example.energyapp.R
 
 @Composable
-fun LoginScreen( navController: NavHostController) {
-//    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-//        Text(text = "Login Screen")
-//    }
+fun LoginScreen(navController: NavHostController) {
+
     Box(
         modifier = Modifier
             .fillMaxSize()
             .background(Color(0xFF0B1202))
             .padding(top = 90.dp)
     ) {
-        Column (modifier = Modifier
-            .background(
-                Color(0xFFF5F5E6),
-                shape = RoundedCornerShape(topEnd = 90.dp)
-            )
-            .fillMaxSize()
-            .padding(top = 40.dp),
+        Column(
+            modifier = Modifier
+                .background(
+                    Color(0xFFF5F5E6),
+                    shape = RoundedCornerShape(topEnd = 90.dp)
+                )
+                .fillMaxSize()
+                .padding(top = 40.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
 
             ) {
